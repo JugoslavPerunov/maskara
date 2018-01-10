@@ -53,19 +53,27 @@ body {
 }
 
 img {
+    /*width u %, umesto da pisem @media...*/
+    width: 80%;
     position: relative;
-    top: 10%;
+    /*top: 15%; ne utiče! why?*/
+    top: 15px;
     left: 15%;
     transition: all 2s ease-in-out;
 }
 
 img:hover {
     transform: rotateZ(225deg) scale(1.3, 1.3);
-    top: -20%;
 }
 
-@media (max-width: 1005px) {
-    .cetkica {
-        display: none;
+/*@media (max-width: 1090px) {
+    img {
+       width: 80%;
     }
 }
+
+@media (max-width: 500px) {
+    img {
+        width: 80%;
+    }
+}*/
