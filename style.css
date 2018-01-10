@@ -1,0 +1,60 @@
+body {
+    background-color: beige;
+}
+.grid {
+    margin: 5% auto;
+    display: grid;
+    width: 900px;
+    height: 1000px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 2fr repeat(2, 20%) 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    /*shorthand >> grid-gap: 5px 10px;*/
+}
+
+.box {
+    border: 1px solid aqua;
+    border-radius: 25%;
+    color: hsla(0, 50%, 50%, 0.9);
+}
+
+.a {
+   grid-row: 1 / span 2; 
+   background-color: goldenrod;
+}
+
+.b {
+    background-color: royalblue;
+}
+
+.c {
+    background-color: azure;
+}
+
+.d {
+    background-color: purple;
+}
+
+.e {
+    background-color: silver;
+}
+
+.f {
+    background-color: #f09;
+}
+
+.g {
+    background-color: maroon;
+}
+
+.h {
+    grid-column: 1 / span 4;
+}
+
+img {
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 10%;
+    left: 15%;
+}
