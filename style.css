@@ -19,6 +19,18 @@ body {
     color: hsla(0, 50%, 50%, 0.9);
 }
 
+.boja {
+    transition: transform 1s ease-in-out;
+    /*opacity: 0.8;*/
+}
+
+.boja:hover {
+    transform: scale(1.05, 1.05);
+    /*opacity: 1;*/
+}
+
+
+
 .a {
    grid-row: 1 / span 2; 
    background-color: goldenrod;
